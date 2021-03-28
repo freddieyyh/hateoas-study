@@ -7,12 +7,14 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.hateoas.config.EnableHypermediaSupport;
 
 import java.time.LocalDate;
 import java.util.Collections;
 import java.util.List;
 
 @SpringBootApplication
+@EnableHypermediaSupport(type = EnableHypermediaSupport.HypermediaType.HAL)
 public class HateaosStudyApplication {
 
     public static void main(String[] args) {
